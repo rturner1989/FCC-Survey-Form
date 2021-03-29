@@ -1,0 +1,94 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Satisfaction Survey</title>
+        <link rel="stylesheet" href="./CSS/stylesheet.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="title">Customer Satisfaction Survery</h1>
+            <p id="description">Thank you for taking the Customer Satisfaction Survey. We are always working to improve our customer experiences within store and would appreciate the time you are taking to hear about how we are doing.</p>
+        </header>
+        <main id="main">
+            <form id="survey-form" action="/submit-form-data">
+                <section id="container">
+                    <div id="box1">
+                        <label for="name" id="name-label">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" title="Enter full name" required>
+                    </div>
+                    <div id="box2">
+                        <label for="email" id="email-label">Email:</label>   
+                        <input type="email" id="email" name="email" placeholder="Enter your email" title="Enter your email" required>
+                    </div>
+                    <div id="box3">
+                        <label for="telephone-number" id="telephone-label">Telephone Number:</label>
+                        <input type="tel" id="telephone-number" name="telephone-number" placeholder="Enter your number" title="Enter your number" required> 
+                    </div>
+                    <div id="box4">
+                        <label for="age" id="number-label">Age:</label>
+                        <input type="number" id="number" name="age" placeholder="Enter here" title="Enter here" min="0" max="110" required>
+                    </div>
+                    <div id="box5">
+                        <label for="connection-type" id="dropdown-label">Connection Type</label>
+                        <select name="connection-type" id="dropdown">
+                            <option value="postpay">Postpay</option>
+                            <option value="prepay">Prepay</option>
+                        </select>
+                    </div>
+                </section>
+                <section id="container2">
+                    <div class="checkboxgroup">
+                        <p id="interaction">How would you rate the interaction with the sales advisor within store?</p>
+                        <label for="one1-two1-three1-four1-five1">One<input type="radio" name="one1-two1-three1-four1-five1" class="one" value="1"></label>
+                        <label for="one1-two1-three1-four1-five1">Two<input type="radio" name="one1-two1-three1-four1-five1" class="two" value="2"></label>
+                        <label for="one1-two1-three1-four1-five1">Three<input type="radio" name="one1-two1-three1-four1-five1" class="three" value="3"></label>
+                        <label for="one1-two1-three1-four1-five1">Four<input type="radio" name="one1-two1-three1-four1-five1" class="four" value="4"></label>
+                        <label for="one1-two1-three1-four1-five1">Five<input type="radio" name="one1-two1-three1-four1-five1" class="five" value="5"></label>
+                    </div>  
+                    <div class="checkboxgroup">
+                        <p id="listening">How well do you think the sales advisor understood and listened to what you were looking for?</p>
+                        <label for="one2-two2-three2-four2-five2">One<input type="radio" name="one2-two2-three2-four2-five2" class="one" value="1"></label>
+                        <label for="one2-two2-three2-four2-five2">Two<input type="radio" name="one2-two2-three2-four2-five2" class="two" value="2"></label>
+                        <label for="one2-two2-three2-four2-five2">Three<input type="radio" name="one2-two2-three2-four2-five2" class="three" value="3"></label>
+                        <label for="one2-two2-three2-four2-five2">Four<input type="radio" name="one2-two2-three2-four2-five2" class="four" value="4"></label>
+                        <label for="one2-two2-three2-four2-five2">Five<input type="radio" name="one2-two2-three2-four2-five2" class="five" value="5"></label>
+                    </div>
+                    <div class="checkboxgroup">
+                        <p id="selection">What did you think of the prices and selection shown to you in store?</p>
+                        <label for="one3-two3-three3-four3-five3">One<input type="radio" name="one3-two3-three3-four3-five3" class="one" value="1"></label>
+                        <label for="one3-two3-three3-four3-five3">Two<input type="radio" name="one3-two3-three3-four3-five3" class="two" value="2"></label>
+                        <label for="one3-two3-three3-four3-five3">Three<input type="radio" name="one3-two3-three3-four3-five3" class="three" value="3"></label>
+                        <label for="one3-two3-three3-four3-five3">Four<input type="radio" name="one3-two3-three3-four3-five3" class="four" value="4"></label>
+                        <label for="one3-two3-three3-four3-five3">Five<input type="radio" name="one3-two3-three3-four3-five3" class="five" value="5"></label>
+                    </div>
+                    <div class="checkboxgroup">
+                        <p id="experience">How would you rate your overall shopping experience in store?</p>
+                        <label for="one4-two4-three4-four4-five4">One<input type="radio" name="one4-two4-three4-four4-five4" class="one" value="1"></label>
+                        <label for="one4-two4-three4-four4-five4">Two<input type="radio" name="one4-two4-three4-four4-five4" class="two" value="2"></label>
+                        <label for="one4-two4-three4-four4-five4">Three<input type="radio" name="one4-two4-three4-four4-five4" class="three" value="3"></label>
+                        <label for="one4-two4-three4-four4-five4">Four<input type="radio" name="one4-two4-three4-four4-five4" class="four" value="4"></label>
+                        <label for="one4-two4-three4-four4-five4">Five<input type="radio" name="one4-two4-three4-four4-five4" class="five" value="5"></label>
+                    </div>
+                    <div class="comment">
+                        <label id="comment" for="comment">Please leave a comment about how we did:</label>
+                        <textarea name="comment" id="textarea" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="checkboxgroup1">
+                        <p id="marketing">Please tick the below boxes with how would you like to hear from us in the future?</p>
+                        <label for="post-email-phone-message">Post<input type="checkbox" name="post-email-phone-message" class="post" value="post"></label>
+                        <label for="post-email-phone-message">E-mail<input type="checkbox" name="post-email-phone-message" class="email" value="email"></label>
+                        <label for="post-email-phone-message">Telephone<input type="checkbox" name="post-email-phone-message" class="phone" value="phone"></label>
+                        <label for="post-email-phone-message">Text Message<input type="checkbox" name="post-email-phone-message" class="message" value="message"></label>
+                    </div>
+                    <div class="submit">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+             </section>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

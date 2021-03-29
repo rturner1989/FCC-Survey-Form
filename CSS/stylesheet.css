@@ -1,0 +1,62 @@
+body {
+    background-image: url(/IMAGES/background2.jpg);
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+#header {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(60, 75, 98, 0.5);
+    box-shadow: black 5px 5px;
+    padding: 25px;
+    margin-bottom: 10px;
+}   
+#main {
+    background-color: rgba(173, 218, 215, 0.5);
+    max-width: 800px;
+    height: auto;
+    padding: 25px;
+    box-shadow: black 5px 5px;
+    margin: auto;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    display: flex;
+    flex-direction: row;  
+}
+#name-label, #email-label, #telephone-label, #number-label, #dropdown-label {
+    order: 1;
+    width: 30vw;    
+}
+#name, #email, #telephone-number, #number, #dropdown  {
+    order: 2;
+    width: 70vw;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxgroup p {
+    margin-bottom: 0px;
+}
+.checkboxgroup1 p {
+    margin-bottom: 0px;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.submit {
+    text-align: center;
+}
