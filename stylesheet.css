@@ -1,10 +1,16 @@
 /* Variables */
 :root {
+    --header-text-color: rgb(255, 255, 255);
+    --header-background-color: rgba(23, 36, 54, 0.5);
 }
 /* Root */
 * {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
     font-family: "Ubuntu", sans-serif;
 }
+/* Page Container */
 body {
     display: flex;
     flex-direction: column;
@@ -12,52 +18,69 @@ body {
     align-items: center;
     background-image: url(background2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;
 }
+/* Header */
 #header {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     width: 40%;
     min-width: 750px;
     max-width: 950px;
     height: 15%;
     max-height: 175px;
     padding: 2rem;
-    background-color: rgba(60, 75, 98, 0.5);
+    background-color: var(--header-background-color);
     box-shadow: black 5px 5px;
+    color: var(--header-text-color);
 }
+#header h1 {
+    font-size: 2.5rem;
+}
+/* Content */
 #main {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 2rem;
+    padding: 10px;
     width: 40%;
     max-width: 950px;
     min-width: 750px;
-    height: 50%;
+    height: 75%;
+    min-height: 950px;
 }
+/* Main Form */
 #survey-form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 950px;
-    height: 100%;
-    max-height: 700px;
     padding: 2rem;
+    padding-top: 0.5rem;
     background-color: rgba(173, 218, 215, 0.5);
     box-shadow: black 5px 5px;
 }
+/* Form Content */
 #container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
     align-self: center;
+    margin: 10px;
     width: 60%;
+    min-width: 450px;
+    height: 30%;
 }
 #container2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
 }
 .input-container {
     display: flex;
@@ -72,11 +95,42 @@ body {
 .input {
     width: 70vw;
 }
-.comment {
+.radio-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.input-radio-label {
+    font-weight: 600;
+}
+#textarea {
+    width: 80%;
+}
+.checkboxgroup {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 5px;
+    width: 95%;
+    height: 100%;
+    background: rgba(143, 202, 197, 0.5);
+    border-radius: 10px;
 }
-.submit {
-    text-align: center;
+#text-area {
+    height: 80%;
+    width: 95%;
+    padding: 20px;
+    padding-top: 0;
+}
+#comment {
+    padding: 5px;
+}
+#submit-btn {
+    align-self: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
