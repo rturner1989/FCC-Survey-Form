@@ -2,7 +2,9 @@
 :root {
     --header-text-color: rgb(255, 255, 255);
     --header-background-color: rgba(23, 36, 54, 0.5);
+    --header-background-hover-color: rgba(23, 36, 54, 0.856);
     --border-color: rgb(0, 0, 0);
+    --border-color-hover: rgb(255, 255, 255);
     --main-form-background-color: rgba(173, 218, 215, 0.5);
     --main-form-inset-background-color: rgba(87, 119, 113, 0.787);
     --form-font-weight: 500;
@@ -36,6 +38,7 @@ body {
     width: 40%;
     min-width: 965px;
     height: 15%;
+    min-height: 190px;
     padding: 10px;
     background-color: var(--header-background-color);
     border: var(--border-color) 5px solid;
@@ -57,7 +60,8 @@ body {
     padding: 10px;
     width: 40%;
     min-width: 965px;
-    height: 75%;
+    height: 76%;
+    min-height: 190px;
     border: var(--border-color) 5px solid;
     background-color: var(--main-form-background-color);
 }
@@ -115,13 +119,12 @@ body {
 #text-area {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    padding: 10px;
     margin: 5px;
     width: 95%;
     height: 100%;
     background-color: var(--main-form-inset-background-color);
+    border: white 3px solid;
     border-radius: 10px;
     color: white;
 }
@@ -145,4 +148,26 @@ body {
     padding: 10px;
     width: 100%;
     height: 100%;
+}
+/* Button Styling */
+
+#submit {
+    width: 50%;
+    min-width: 400px;
+    height: 75%;
+    min-height: 45px;
+    padding: 5px;
+    border: var(--border-color) 3px solid;
+    color: var(--header-text-color);
+    font-size: var(--form-question-font-size);
+    font-weight: var(--form-font-weight);
+    background-color: var(--header-background-color);
+    border-radius: 10px;
+}
+#submit:hover {
+    border: var(--border-color-hover) solid 3px;
+    background-color: var(--header-background-hover-color);
+}
+#submit:active {
+    border: var(--main-form-background-color) solid 3px;
 }
