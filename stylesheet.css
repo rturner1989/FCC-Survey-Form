@@ -2,6 +2,11 @@
 :root {
     --header-text-color: rgb(255, 255, 255);
     --header-background-color: rgba(23, 36, 54, 0.5);
+    --border-color: rgb(0, 0, 0);
+    --main-form-background-color: rgba(173, 218, 215, 0.5);
+    --main-form-inset-background-color: rgba(87, 119, 113, 0.787);
+    --form-font-weight: 500;
+    --form-question-font-size: 24px;
 }
 /* Root */
 * {
@@ -14,7 +19,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url(background2.jpg);
     background-size: cover;
@@ -29,19 +34,21 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 40%;
-    min-width: 750px;
-    max-width: 950px;
+    min-width: 965px;
     height: 15%;
-    max-height: 175px;
-    padding: 2rem;
+    padding: 10px;
     background-color: var(--header-background-color);
-    border: black 5px solid;
+    border: var(--border-color) 5px solid;
     color: var(--header-text-color);
-    font-weight: 600;
+    font-weight: var(--form-font-weight);
 }
 #header h1 {
-    font-size: 2.5rem;
+    font-size: 58px;
 }
+#header p {
+    font-size: var(--form-question-font-size);
+}
+
 /* Content */
 #main {
     display: flex;
@@ -49,20 +56,17 @@ body {
     align-content: center;
     padding: 10px;
     width: 40%;
-    max-width: 950px;
-    min-width: 750px;
+    min-width: 965px;
     height: 75%;
-    min-height: 950px;
+    border: var(--border-color) 5px solid;
+    background-color: var(--main-form-background-color);
 }
 /* Main Form */
 #survey-form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 2rem;
-    padding-top: 0.5rem;
-    background-color: rgba(173, 218, 215, 0.5);
-    border: black 5px solid;
+    height: 100%;
 }
 /* Form Content */
 #container {
@@ -73,8 +77,6 @@ body {
     align-self: center;
     margin: 10px;
     width: 60%;
-    min-width: 450px;
-    height: 30%;
 }
 #container2 {
     display: flex;
@@ -96,19 +98,21 @@ body {
 .input {
     width: 70vw;
 }
-.radio-input-container {
+.radio-input-container,
+.checkbox-input-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 50%;
 }
 .input-radio-label {
-    font-weight: 600;
+    font-weight: var(--form-font-weight);
 }
-#textarea {
-    width: 80%;
+.input-checkbox-label {
+    font-weight: var(--form-font-weight);
 }
-.checkboxgroup {
+.checkboxgroup,
+#text-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,17 +121,22 @@ body {
     margin: 5px;
     width: 95%;
     height: 100%;
-    background: rgba(143, 202, 197, 0.5);
+    background-color: var(--main-form-inset-background-color);
+    border-radius: 10px;
+    color: white;
+}
+#textarea {
+    width: 100%;
     border-radius: 10px;
 }
-#text-area {
-    height: 80%;
-    width: 95%;
-    padding: 20px;
-    padding-top: 0;
-}
 #comment {
-    padding: 5px;
+    padding-bottom: 10px;
+    font-weight: var(--form-font-weight);
+    font-size: var(--form-question-font-size);
+}
+.survery-question {
+    font-size: var(--form-question-font-size);
+    font-weight: var(--form-font-weight);
 }
 #submit-btn {
     display: flex;
